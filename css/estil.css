@@ -24,6 +24,12 @@ header h1 {
     font-weight: bold;
 }
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
 .iframe-container {
     border: 2px solid #8b5e3c;
     border-radius: 8px;
