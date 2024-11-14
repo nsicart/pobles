@@ -1,9 +1,11 @@
+/* Estils generals */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #e0e8dd;
     color: #2f4f2f;
+    overflow-x: hidden;
 }
 
 header {
@@ -29,23 +31,20 @@ header h1 {
     border: 2px solid #8b5e3c;
     border-radius: 8px;
     overflow: hidden;
-    width: 95%;
+    width: calc(100% - 40px);
     max-width: 1400px;
     height: 800px;
     margin: 20px auto;
-    overflow-x: hidden;
 }
 
 iframe {
     width: 100%;
     height: 100%;
     border: none;
-    overflow-x: hidden;
 }
 
 .info {
     max-width: 1400px;
-    width: 95%
     margin: 20px auto;
     text-align: justify;
     padding: 0 20px;
@@ -76,4 +75,32 @@ footer a:hover {
     background-color: #3e5c3e;
     transform: scale(1.05);
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estils per a pantalles petites */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Redueix la mida de la font per adaptar-se a pantalles petites */
+        padding: 0 10px;  /* Ajusta el padding lateral */
+        max-width: 100%;  /* Permet que el text ocupi tota l'amplada disponible */
+    }
+
+    .iframe-container {
+        width: calc(100% - 20px); /* Redueix l’amplada per adaptar-se a mòbils */
+        margin: 10px auto;
+    }
+
+    footer {
+        padding: 15px; /* Redueix el padding vertical */
+    }
+
+    footer a {
+        padding: 10px 20px; /* Redueix el padding del botó */
+        font-size: 1em; /* Ajusta la mida de la font per millorar la llegibilitat en pantalles petites */
+        border-radius: 5px; /* Redueix lleugerament el radi de la cantonada */
+    }
 }
