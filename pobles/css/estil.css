@@ -7,12 +7,14 @@ body {
 }
 
 header {
-    width: 100%; /* Amplada completa sense desbordar */
+    width: 100vw; /* Amplada completa */
+    max-width: 100%; /* Evita desbordaments horitzontals */
     background-color: #4c6b4c;
     color: #f7f2ed;
     text-align: center;
-    padding: 50px 0;
+    padding: 50px 20px; /* Centra el contingut */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; /* Inclou padding dins de l'ample */
 }
 
 header h1 {
@@ -26,82 +28,19 @@ header h1 {
     padding: 20px;
 }
 
-.map-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.map-card {
-    background-color: #e8f0e8;
-    border: 2px solid #4c6b4c;
-    border-radius: 8px;
-    width: 200px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.map-card:hover {
-    transform: scale(1.05);
-}
-
-.map-title {
-    font-size: 1.2em;
-    margin: 10px 0;
-    color: #3e5c3e;
-    text-decoration: none;
-}
-
-iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
-}
-
 .iframe-container {
     border: 2px solid #8b5e3c;
     border-radius: 8px;
     overflow: hidden; /* Amaga desbordament */
-    width: calc(100% - 40px);
+    width: 100%; /* Ample total */
+    height: 800px;
     margin: 20px auto;
 }
 
-.form-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f0f5f0;
-    border: 2px solid #4c6b4c;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-.form-input {
-    margin: 10px 0;
-    padding: 10px;
-    width: 80%;
-    font-size: 1em;
-    border-radius: 4px;
-    border: 1px solid #4c6b4c;
-}
-
-.form-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #4c6b4c;
-    color: #f7f2ed;
+iframe {
+    width: 100%;
+    height: 100%;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.form-button:hover {
-    background-color: #3e5c3e;
 }
 
 footer {
@@ -112,7 +51,20 @@ footer {
     margin-top: 30px;
 }
 
+/* Estils per l'enllaç al catàleg com a botó */
 footer a {
-    color: #9fb69f;
+    display: inline-block;
+    background-color: #4c6b4c;
+    color: #f7f2ed;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
 }
+
+footer a:hover {
+    background-color: #3e5c3e;
+    transform: scale(1.05); /* L'efecte de creixement quan el cursor hi passa */
+}
+
