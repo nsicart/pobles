@@ -5,11 +5,10 @@ body {
     padding: 0;
     background-color: #e0e8dd;
     color: #2f4f2f;
-    overflow-x: hidden;
 }
 
 header {
-    width: 100%;
+    
     background-color: #4c6b4c;
     color: #f7f2ed;
     text-align: center;
