@@ -1,57 +1,77 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #e0e8dd;
     color: #2f4f2f;
+    overflow-x: hidden;
 }
 
 header {
-    max-width: 1400px; /* Amplada màxima per limitar el contingut */
+    width: 100%;
     background-color: #4c6b4c;
     color: #f7f2ed;
     text-align: center;
-    padding: 20px 20px; /* Més espai lateral */
+    padding: 30px 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 0 auto; /* Centrat */
+    box-sizing: border-box;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
-}
-
-.iframe-container, .info, footer {
-    max-width: 1400px; /* Amplada màxima per limitar el contingut */
-    margin: 0 auto;
-    padding: 0 20px; /* Més espai lateral */
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 20px;
+    font-weight: bold;
 }
 
 .iframe-container {
-    width: 100%;
+    border: 2px solid #8b5e3c;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    max-width: 1400px;
     height: 800px;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
-.iframe-container iframe {
+iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
 
 .info {
-    margin-top: 20px;
+    max-width: 1400px;
+    margin: 20px auto;
     text-align: justify;
+    padding: 0 20px;
 }
 
 footer {
-    max-width: 1400px;
     background-color: #2f4f2f;
     color: #f7f2ed;
     text-align: center;
-    padding: 20px 20px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    display: inline-block;
+    background-color: #4c6b4c;
+    color: #f7f2ed;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer a:hover {
+    background-color: #3e5c3e;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
 }
