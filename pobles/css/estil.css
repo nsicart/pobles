@@ -7,32 +7,28 @@ body {
 }
 
 header {
-    width: 100vw; /* Amplada completa */
-    max-width: 100%; /* Evita desbordaments horitzontals */
+    width: 100vw; /* Amplada completa del viewport */
     background-color: #4c6b4c;
     color: #f7f2ed;
     text-align: center;
-    padding: 50px 20px; /* Centra el contingut */
+    padding: 50px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box; /* Inclou padding dins de l'ample */
+    box-sizing: border-box;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    max-width: 1400px; /* Limita l'ample del text */
+    margin: auto; /* Centra el text */
 }
 
 .iframe-container {
     border: 2px solid #8b5e3c;
     border-radius: 8px;
-    overflow: hidden; /* Amaga desbordament */
-    width: 100%; /* Ample total */
+    overflow: hidden; /* Amaga el desbordament */
+    width: calc(100% - 40px); /* Ample total menys padding */
+    max-width: 1400px;
     height: 800px;
     margin: 20px auto;
 }
@@ -43,6 +39,13 @@ iframe {
     border: none;
 }
 
+.info {
+    max-width: 1400px;
+    margin: 20px auto;
+    text-align: justify;
+    padding: 0 20px;
+}
+
 footer {
     background-color: #2f4f2f;
     color: #f7f2ed;
@@ -51,7 +54,7 @@ footer {
     margin-top: 30px;
 }
 
-/* Estils per l'enllaç al catàleg com a botó */
+/* Estilitza l'enllaç del footer com un botó */
 footer a {
     display: inline-block;
     background-color: #4c6b4c;
@@ -65,6 +68,5 @@ footer a {
 
 footer a:hover {
     background-color: #3e5c3e;
-    transform: scale(1.05); /* L'efecte de creixement quan el cursor hi passa */
+    transform: scale(1.05); /* Efecte de creixement */
 }
-
