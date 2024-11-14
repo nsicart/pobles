@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #e0e8dd;
     color: #2f4f2f;
+    overflow-x: hidden; /* Evita desbordament horitzontal no desitjat */
 }
 
 header {
@@ -19,8 +20,9 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    max-width: 1400px; /* Limita l'ample del text */
-    margin: auto; /* Centra el text */
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 20px; /* Espaiat lateral per al text */
 }
 
 .iframe-container {
