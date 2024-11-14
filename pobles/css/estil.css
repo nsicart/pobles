@@ -4,25 +4,26 @@ body {
     padding: 0;
     background-color: #e0e8dd;
     color: #2f4f2f;
-    overflow-x: hidden; /* Evita desbordament horitzontal no desitjat */
+    overflow-x: hidden; /* Evita desbordament horitzontal */
 }
 
 header {
-    width: 100vw; /* Amplada completa del viewport */
+    width: 100%; /* Amplada completa */
     background-color: #4c6b4c;
     color: #f7f2ed;
     text-align: center;
-    padding: 50px 0;
+    padding: 30px 20px; /* Més compacte */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.5em; /* Mida de lletra adequada */
     max-width: 1400px;
     margin: auto;
-    padding: 0 20px; /* Espaiat lateral per al text */
+    padding: 0 20px; /* Espaiat lateral */
+    font-weight: bold;
 }
 
 .iframe-container {
@@ -56,19 +57,23 @@ footer {
     margin-top: 30px;
 }
 
-/* Estilitza l'enllaç del footer com un botó */
+/* Millora l'estil de l'enllaç al footer com a botó */
 footer a {
     display: inline-block;
     background-color: #4c6b4c;
     color: #f7f2ed;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 25px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1em;
     transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombra suau */
 }
 
 footer a:hover {
     background-color: #3e5c3e;
     transform: scale(1.05); /* Efecte de creixement */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Augmenta l'ombra en passar */
 }
+
