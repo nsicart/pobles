@@ -17,7 +17,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    padding: 0 10px; /* Afegeix un padding mínim per evitar que el text toqui les vores */
+    padding: 0 10px;
     font-weight: bold;
 }
 
@@ -104,18 +104,18 @@ footer a:hover {
 /* Estils per a dispositius mòbils */
 @media (max-width: 768px) {
     button {
-        font-size: 1.8em; /* Augmenta la mida de la lletra */
-        padding: 20px 40px; /* Espai interior més ampli */
+        font-size: 1.8em;
+        padding: 20px 40px;
         border-radius: 12px;
     }
 
     footer a {
-        font-size: 1.8em; /* Mida de lletra més gran */
+        font-size: 1.8em;
         padding: 20px 40px;
         border-radius: 12px;
     }
 
     footer {
-        padding: 40px 10px; /* Augmenta l'espai al voltant del footer */
+        padding: 40px 10px;
     }
 }
