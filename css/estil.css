@@ -106,12 +106,18 @@ footer a:hover {
 
 @media (max-width: 768px) {
     button {
-        font-size: 1.2em; /* Augmenta la mida de la lletra */
-        padding: 16px 28px; /* Augmenta l'espai interior */
+        font-size: 1.5em; /* Mida de lletra més gran */
+        padding: 20px 40px; /* Espai interior més ampli */
+        border-radius: 12px; /* Cantonades arrodonides més evidents */
     }
 
     footer a {
-        font-size: 1.3em; /* Augmenta la mida de la lletra */
-        padding: 16px 30px; /* Augmenta l'espai interior */
+        font-size: 1.5em; /* Mida de lletra més gran */
+        padding: 20px 40px; /* Espai interior més ampli */
+        border-radius: 12px; /* Cantonades arrodonides més evidents */
+    }
+
+    footer {
+        padding: 30px 10px; /* Augmenta l'espai al voltant del footer */
     }
 }
