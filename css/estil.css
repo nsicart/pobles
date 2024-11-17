@@ -104,7 +104,7 @@ footer a:hover {
 /* Estils per a dispositius mòbils */
 @media (max-width: 768px) {
     button {
-        font-size: 2.5em;
+        font-size: 3.5em;
         padding: 20px 40px;
         border-radius: 12px;
     }
